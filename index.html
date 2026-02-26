@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nathan Nascimento — Designer & Developer Portfolio" />
+  <meta name="theme-color" content="#000000" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nathan Nascimento — Portfolio" />
+  <meta property="og:description" content="Designer & Developer based in Brazil" />
+  <meta property="og:type" content="website" />
+
+  <title>Nathan Nascimento — Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&family=VT323&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- Rain Layer -->
+  <div class="rain-container" id="rain" aria-hidden="true"></div>
+
+  <!-- ═══ NAVIGATION ═══ -->
+  <header>
+    <nav class="nav-inner" role="navigation" aria-label="Main navigation">
+      <a class="nav-logo" href="#" aria-label="Home">N://</a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#" class="nav-link active" data-section="about" aria-current="page">ABOUT</a></li>
+        <li><a href="#" class="nav-link" data-section="work">WORK</a></li>
+        <li><a href="#" class="nav-link" data-section="blog">BLOG</a></li>
+        <li><a href="#" class="nav-link" data-section="gallery">GALLERY</a></li>
+        <li><a href="#" class="nav-link" data-section="contact">CONTACT</a></li>
+      </ul>
+
+      <div class="nav-time" id="clock" aria-live="polite" aria-label="Current time">00:00:00</div>
+    </nav>
+  </header>
+
+  <!-- ═══ MAIN ═══ -->
+  <main class="page-wrapper">
+
+    <!-- ── ABOUT ── -->
+    <section id="about" class="section active" aria-label="About">
+      <div class="panel fade-in">
+        <div class="hero">
+          <div class="hero-avatar" aria-hidden="true">👾</div>
+          <div class="hero-text">
+            <h1>Nathan Nascimento</h1>
+            <div class="subtitle">DESIGNER &amp; DEVELOPER</div>
+            <div class="location">◈ Brazil &nbsp;·&nbsp; UTC-3</div>
+          </div>
+        </div>
+        <p>As a passionate technology enthusiast, I love modifying devices and creating projects as a hobby. I developed this portfolio to showcase
+        my work professionally, where I’ll share my projects and regularly update this blog with new content.</p>
+        <p>Currently exploring new programming languages and evolving professionally.</p>
+        <a class="btn" href="#" data-section="contact" aria-label="Go to contact section">GET IN TOUCH</a>
+      </div>
+
+      <div class="panel fade-in" style="animation-delay:0.15s">
+        <div class="panel-header">Technical Skills</div>
+  <div class="skills-grid">
+    <div class="skill-col">
+      <h4>Frontend</h4>
+      <ul role="list">
+        <li>HTML / CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>TypeScript</li>
+        <li>Construct</li>
+      </ul>
+    </div>
+    <div class="skill-col">
+      <h4>Backend</h4>
+      <ul role="list">
+        <li>Python</li>
+        <li>C / C#</li>
+        <li>SQL</li>
+        <li>Node.js</li>
+        <li>PHP</li>
+      </ul>
+    </div>
+    <div class="skill-col">
+      <h4>Design</h4>
+      <ul role="list">
+        <li>SolidWorks</li>
+        <li>Blender</li>
+        <li>Adobe Photoshop</li>
+        <li>Adobe Premiere</li>
+        <li>Figma</li>
+      </ul>
+    </div>
+    <div class="skill-col">
+      <h4>Languages</h4>
+      <ul role="list">
+        <li>English — C1</li>
+        <li>Japanese — N3</li>
+        <li>German — Learning</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+      <div class="panel fade-in" style="animation-delay:0.3s">
+        <div class="panel-header">Academic Background</div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <strong>Marketing Director for an Athletic Academic Association</strong>
+                <span class="tag">2025</span>
+              </div>
+              <div class="timeline-company">ATHLETIC ACADEMIC ASSOCIATUIN OCTACORE - PUCPR</div>
+              <p> As an Academic Marketing Director I strategized and implemented communication and marketing initiatives to promote events and foster engagement within the academic community. Some of my works are displayed at my<a href="#" class="nav-link" data-section="gallery">gallery.</a></p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <strong>Bio-Inspired Research Project</strong>
+                <span class="tag">2023</span>
+              </div>
+              <div class="timeline-company">PUCPR</div>
+              <p>During my Computer Engineering degree, I spearheaded an innovative university project developing bioinspired prostheses for Paralympic athletics and the use of graphene in mobility prostheses, demonstrating expertise in research and innovation.</p>
+            </div>
+          </div>
+    </section>
+
+    <!-- ── WORK ── -->
+    <section id="work" class="section" aria-label="Work">
+      <div class="panel fade-in">
+        <div class="panel-header">Selected Projects</div>
+
+        <article class="work-card" tabindex="0">
+          <div class="work-card-header">
+            <h3>Raven's List</h3>
+            <span class="tag">2025</span>
+          </div>
+          <p>Events promotion and ticket selling platform for Goth events. An academic project showcasing web development, design skills, dashboard creation and data visualization/editing.</p>
+          <div class="tech-stack">
+            <span class="tech-pill">HTML</span>
+            <span class="tech-pill">CSS</span>
+            <span class="tech-pill">JavaScript</span>
+            <span class="tech-pill">PHP</span>
+            <span class="tech-pill">SQL</span>
+          </div>
+        </article>
+        <article class="work-card" tabindex="0">
+          <div class="work-card-header">
+            <h3>Lorem Ipsum</h3>
+            <span class="tag">202-</span>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies tortor odio, a maximus dolor interdum vel. Sed nec convallis metus, at sodales lorem. Quisque egestas massa vitae ultrices sodales.</p>
+          <div class="tech-stack">
+            <span class="tech-pill">---</span>
+            <span class="tech-pill">---</span>
+            <span class="tech-pill">---</span>
+            <span class="tech-pill">---</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ── BLOG ── -->
+    <section id="blog" class="section" aria-label="Blog">
+      <div class="panel fade-in">
+        <div class="panel-header">Transmissions</div>
+        <ul class="blog-list" role="list">
+          <li class="blog-item" tabindex="0">
+            <div class="blog-body">
+              <div class="blog-title">The Aesthetics of Machine Interfaces: When UI Becomes Art</div>
+              <div class="blog-excerpt">Exploring how the visual language of machines has evolved from pure function to cultural artifact.</div>
+            </div>
+            <div class="blog-meta">
+              <span class="blog-date">2025.11.20</span>
+              <span class="blog-tag">DESIGN</span>
+            </div>
+          </li>
+          <li class="blog-item" tabindex="0">
+            <div class="blog-body">
+              <div class="blog-title">Building with Once UI: A System-First Approach to Portfolio Design</div>
+              <div class="blog-excerpt">How to use Once UI tokens and components to ship a distinctive portfolio in under a weekend.</div>
+            </div>
+            <div class="blog-meta">
+              <span class="blog-date">2025.10.04</span>
+              <span class="blog-tag">CODE</span>
+            </div>
+          </li>
+          <li class="blog-item" tabindex="0">
+            <div class="blog-body">
+              <div class="blog-title">Y2K Revival: Why Retro-Futurism Resonates in a Post-AI World</div>
+              <div class="blog-excerpt">On nostalgia, technological anxiety, and the return of green phosphor glows.</div>
+            </div>
+            <div class="blog-meta">
+              <span class="blog-date">2025.08.15</span>
+              <span class="blog-tag">CULTURE</span>
+            </div>
+          </li>
+          <li class="blog-item" tabindex="0">
+            <div class="blog-body">
+              <div class="blog-title">Micro-Interactions That Don't Suck: A Practical Guide</div>
+              <div class="blog-excerpt">The difference between animation that delights and animation that distracts — with real examples.</div>
+            </div>
+            <div class="blog-meta">
+              <span class="blog-date">2025.07.02</span>
+              <span class="blog-tag">UX</span>
+            </div>
+          </li>
+          <li class="blog-item" tabindex="0">
+            <div class="blog-body">
+              <div class="blog-title">Three.js Performance: Rendering 1M Particles at 60fps</div>
+              <div class="blog-excerpt">Deep dive into instancing, frustum culling, and GPU-based particle systems for the web.</div>
+            </div>
+            <div class="blog-meta">
+              <span class="blog-date">2025.05.18</span>
+              <span class="blog-tag">CODE</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ── GALLERY ── -->
+    <section id="gallery" class="section" aria-label="Gallery">
+      <div class="panel fade-in">
+        <div class="panel-header">Visual Archive</div>
+        <div class="gallery-grid" role="list">
+          <div class="gallery-item" role="listitem" tabindex="0" data-label="neural_render_01" aria-label="Neural render artwork">🌐</div>
+          <div class="gallery-item" role="listitem" tabindex="0" data-label="ui_experiment_04" aria-label="UI experiment">⬡</div>
+          <div class="gallery-item" role="listitem" tabindex="0" data-label="void_study_07" aria-label="Void study">◈</div>
+          <div class="gallery-item" role="listitem" tabindex="0" data-label="data_viz_02" aria-label="Data visualization">📊</div>
+          <div class="gallery-item" role="listitem" tabindex="0" data-label="phantom_03" aria-label="Phantom study">👁</div>
+          <div class="gallery-item" role="listitem" tabindex="0" data-label="grid_collapse" aria-label="Grid collapse">⚡</div>
+          <div class="gallery-item" role="listitem" tabindex="0" data-label="signal_noise" aria-label="Signal noise">〰</div>
+          <div class="gallery-item" role="listitem" tabindex="0" data-label="recursive_01" aria-label="Recursive study">∞</div>
+          <div class="gallery-item" role="listitem" tabindex="0" data-label="void_gate" aria-label="Void gate">⊕</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT ── -->
+    <section id="contact" class="section" aria-label="Contact">
+      <div class="panel fade-in">
+        <div class="panel-header">Open Channel</div>
+        <p style="margin-bottom:24px;">Currently available for freelance projects, collaborations, and full-time opportunities. Response time: &lt; 48h.</p>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">IDENTIFIER</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">SIGNAL</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="message">TRANSMISSION</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+          </div>
+          <div id="formStatus" class="form-status" aria-live="polite"></div>
+          <button type="submit" class="btn">TRANSMIT MESSAGE</button>
+        </form>
+      </div>
+
+      <div class="panel fade-in" style="animation-delay:0.15s">
+        <div class="panel-header">Coordinates</div>
+        <div class="contact-links">
+          <a class="contact-link" href="https://github.com/styxvoid" target="_blank" rel="noopener noreferrer">
+            <span class="contact-icon" aria-hidden="true">⌨</span>
+            <span>GitHub</span>
+            <span class="contact-arrow">→</span>
+          </a>
+          <a class="contact-link" href="https://www.linkedin.com/in/nascimento-nathan/" target="_blank" rel="noopener noreferrer">
+            <span class="contact-icon" aria-hidden="true">◈</span>
+            <span>LinkedIn</span>
+            <span class="contact-arrow">→</span>
+          </a>
+          <a class="contact-link" href="mailto:nathan.nascimento@aol.com">
+            <span class="contact-icon" aria-hidden="true">✉</span>
+            <span>nathan.nascimento@aol.com</span>
+            <span class="contact-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer>
+    <p>© 2026 / STYXVOID / ALL SYSTEMS NOMINAL</p>
+  </footer>
+
+  <!-- ═══ STATUS BAR ═══ -->
+  <div class="status-bar" role="status" aria-live="polite">
+    <span><span class="status-dot" aria-hidden="true"></span>SYSTEM ONLINE</span>
+    <span id="status-path">/about</span>
+    <span>VER 2.4.1</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/rain.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

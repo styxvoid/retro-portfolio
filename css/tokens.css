@@ -1,0 +1,48 @@
+/* ═══════════════════════════════
+   DESIGN TOKENS
+═══════════════════════════════ */
+:root {
+  /* Colors */
+  --neon-green:    #00ff62;
+  --neon-soft:     #68ffb4;
+  --neon-dim:      rgb(168, 255, 207);
+  --neon-bright:   #00ff6a;
+  --dark-bg:       #000000;
+  --dark-box:      rgba(25, 20, 39, 0.80);
+
+  /* Borders */
+  --border:        2px ridge #00ff62;
+  --border-soft:   1px ridge rgba(0,255,98,0.3);
+
+  /* Typography shadows */
+  --text-shadow:   #00e572 1px 0 5px;
+
+  /* Glow */
+  --glow-strong:   0 0 20px #00ff62, 0 0 40px rgba(0,255,98,0.3);
+  --glow-soft:     0 0 8px rgba(0,255,98,0.25);
+
+  /* Gradients */
+  --gradient-btn:  linear-gradient(to bottom, #60ffafce 0%, #00814b 47%, #00743e 70%, #00b679c2 94%, #00d39e 100%);
+  --gradient-nav:  linear-gradient(to bottom, rgba(96,255,207,0.12) 0%, #005035 47%, #00804f 70%, rgba(0,182,106,0.76) 94%, #00d394 100%);
+  --gradient-card: linear-gradient(135deg, rgba(0,255,98,0.04), transparent);
+
+  /* Fonts */
+  --font-display:  'Orbitron', monospace;
+  --font-mono:     'Share Tech Mono', 'Courier New', monospace;
+  --font-retro:    'VT323', monospace;
+
+  /* Spacing */
+  --space-xs:   4px;
+  --space-s:    8px;
+  --space-m:    16px;
+  --space-l:    24px;
+  --space-xl:   40px;
+
+  /* Radii */
+  --radius-s:   6px;
+  --radius-m:   10px;
+  --radius-l:   16px;
+
+  /* Transition */
+  --transition: 0.2s ease;
+}

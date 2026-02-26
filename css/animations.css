@@ -1,0 +1,73 @@
+/* ═══════════════════════════════
+   ANIMATIONS
+═══════════════════════════════ */
+
+/* Fade in section */
+@keyframes fadeSection {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.section.active {
+  animation: fadeSection 0.4s ease forwards;
+}
+
+/* Fade in elements */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* Glow pulse (avatar) */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px #00ff62, 0 0 40px rgba(0,255,98,0.3); }
+  50%       { box-shadow: 0 0 30px #00ff62, 0 0 60px rgba(0,255,98,0.5); }
+}
+
+/* Blink (cursor / status dot) */
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+/* Rain drop */
+.rain-drop {
+  position: absolute;
+  width: 1px;
+  background: linear-gradient(transparent, #00ff62);
+  animation: rain-fall linear infinite;
+  pointer-events: none;
+}
+@keyframes rain-fall {
+  0%   { transform: translateY(-100px); }
+  100% { transform: translateY(110vh); }
+}
+
+/* Typing cursor */
+@keyframes cursor-blink {
+  0%, 100% { border-right-color: var(--neon-green); }
+  50%       { border-right-color: transparent; }
+}
+.typing-cursor {
+  border-right: 2px solid var(--neon-green);
+  animation: cursor-blink 1s step-end infinite;
+  padding-right: 2px;
+}
+
+/* Scanline sweep */
+@keyframes scanline-sweep {
+  0%   { top: -10%; }
+  100% { top: 110%; }
+}
+.scanline-sweep::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0;
+  height: 2px;
+  background: rgba(0,255,98,0.05);
+  animation: scanline-sweep 6s linear infinite;
+  pointer-events: none;
+}

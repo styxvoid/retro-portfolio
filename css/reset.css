@@ -1,0 +1,30 @@
+/* ═══════════════════════════════
+   RESET
+═══════════════════════════════ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+ul, ol { list-style: none; }
+
+img, video { max-width: 100%; height: auto; display: block; }
+
+button, input, textarea, select {
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+button { cursor: pointer; }
+
+a { text-decoration: none; }
+
+h1, h2, h3, h4, h5, h6 { font-weight: inherit; }

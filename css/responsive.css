@@ -1,0 +1,40 @@
+/* ═══════════════════════════════
+   RESPONSIVE
+═══════════════════════════════ */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .nav-time { display: none; }
+  .nav-link { padding: 5px 8px; font-size: 11px; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .skills-grid { gap: 28px; }
+  .panel { padding: 20px; }
+  .hero { gap: 20px; }
+  .hero-avatar { width: 80px; height: 80px; font-size: 28px; }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .nav-links { gap: 2px; }
+  .nav-link { padding: 5px 6px; font-size: 10px; letter-spacing: 0; }
+  .nav-inner { padding: 8px 14px; }
+  .hero { flex-direction: column; align-items: flex-start; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .blog-item { flex-direction: column; gap: 8px; }
+  .blog-meta { flex-direction: row; align-items: center; }
+  .work-card-header { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .timeline { padding-left: 18px; }
+  .panel { padding: 16px; }
+  h1 { font-size: 20px; }
+  .subtitle { font-size: 18px; }
+  .status-bar { font-size: 12px; padding: 4px 12px; }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  .rain-container { display: none; }
+}
