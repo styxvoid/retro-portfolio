@@ -79,3 +79,13 @@
   });
 
 })();
+
+function openGallery(id) {
+  document.querySelector('.gallery-grid').style.display = 'none';
+  document.getElementById('gallery-' + id).style.display = 'block';
+}
+
+function closeGallery() {
+  document.querySelectorAll('.sub-gallery').forEach(g => g.style.display = 'none');
+  document.querySelector('.gallery-grid').style.display = 'grid';
+}

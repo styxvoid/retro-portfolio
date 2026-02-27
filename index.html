@@ -55,7 +55,6 @@
     <section id="about" class="section active" aria-label="About">
       <div class="panel fade-in">
         <div class="hero">
-          <div class="hero-avatar" aria-hidden="true">👾</div>
           <div class="hero-text">
             <h1>Nathan Nascimento</h1>
             <div class="subtitle">DEVELOPER &amp; DESIGNER</div>
@@ -237,22 +236,67 @@
     </section>
 
     <!-- ── GALLERY ── -->
-    <section id="gallery" class="section" aria-label="Gallery">
-      <div class="panel fade-in">
-        <div class="panel-header">Visual Archive</div>
-        <div class="gallery-grid" role="list">
-          <div class="gallery-item" role="listitem" tabindex="0" data-label="neural_render_01" aria-label="Neural render artwork">🌐</div>
-          <div class="gallery-item" role="listitem" tabindex="0" data-label="ui_experiment_04" aria-label="UI experiment">⬡</div>
-          <div class="gallery-item" role="listitem" tabindex="0" data-label="void_study_07" aria-label="Void study">◈</div>
-          <div class="gallery-item" role="listitem" tabindex="0" data-label="data_viz_02" aria-label="Data visualization">📊</div>
-          <div class="gallery-item" role="listitem" tabindex="0" data-label="phantom_03" aria-label="Phantom study">👁</div>
-          <div class="gallery-item" role="listitem" tabindex="0" data-label="grid_collapse" aria-label="Grid collapse">⚡</div>
-          <div class="gallery-item" role="listitem" tabindex="0" data-label="signal_noise" aria-label="Signal noise">〰</div>
-          <div class="gallery-item" role="listitem" tabindex="0" data-label="recursive_01" aria-label="Recursive study">∞</div>
-          <div class="gallery-item" role="listitem" tabindex="0" data-label="void_gate" aria-label="Void gate">⊕</div>
-        </div>
+<section id="gallery" class="section" aria-label="Gallery">
+  <div class="panel fade-in">
+    <div class="panel-header">Visual Archive</div>
+
+    <!-- CATEGORIES -->
+    <div class="gallery-grid" role="list">
+      <div class="gallery-item" role="listitem" tabindex="0"
+          data-label="Overlays Twitch" onclick="openGallery('overlays')">🌐</div>
+      <div class="gallery-item" role="listitem" tabindex="0"
+          data-label="Posts" onclick="openGallery('posts')">📄</div>
+      <div class="gallery-item" role="listitem" tabindex="0"
+          data-label="Stories" onclick="openGallery('stories')">📱</div>
+    </div>
+
+    <!-- SUB-GALLERY -->
+    <div id="gallery-overlays" class="sub-gallery" style="display:none;">
+      <button class="gallery-back" onclick="closeGallery()">← BACK</button>
+      <div class="sub-gallery-header">Overlays Twitch</div>
+      <div class="sub-gallery-grid">
+        <img src="assets/gallery/overlays twitch/imagem de cabeçalho.png" alt="Overlay 1" onclick="openLightbox(this)" />
+        <img src="assets/gallery/overlays twitch/PNG espera live.png" alt="Overlay 2" onclick="openLightbox(this)" />
+        <img src="assets/gallery/overlays twitch/PNG finalização.png" alt="Overlay 3" onclick="openLightbox(this)" />
+        <img src="assets/gallery/overlays twitch/PNG LIVE CRONOMETRO raio.png" alt="Overlay 4" onclick="openLightbox(this)" />
+        <img src="assets/gallery/overlays twitch/PNG OVERLAY LIVE CHAT OCTACORE.png" alt="Overlay 5" onclick="openLightbox(this)" />
       </div>
-    </section>
+    </div>
+
+    <div id="gallery-posts" class="sub-gallery" style="display:none;">
+      <button class="gallery-back" onclick="closeGallery()">← BACK</button>
+      <div class="sub-gallery-header">Posts</div>
+      <div class="sub-gallery-grid">
+        <img src="assets/gallery/posts/post insta carrossel 1.png" alt="Post 1" onclick="openLightbox(this)" />
+        <img src="assets/gallery/posts/post insta carrossel 2 ordem alterada.png" alt="Post 2" onclick="openLightbox(this)" />
+        <img src="assets/gallery/posts/post pedrão atualizado.png" alt="Post 3" onclick="openLightbox(this)" />
+        <img src="assets/gallery/posts/post pedrão 2 atualizado.png" alt="Post 4" onclick="openLightbox(this)" />
+      </div>
+    </div>
+
+    <div id="gallery-stories" class="sub-gallery" style="display:none;">
+      <button class="gallery-back" onclick="closeGallery()">← BACK</button>
+      <div class="sub-gallery-header">Stories</div>
+      <div class="sub-gallery-grid">
+        <img src="assets/gallery/stories/classificatorias.png" alt="Story 1" onclick="openLightbox(this)" />
+        <img src="assets/gallery/stories/classificatorias 2.png" alt="Story 2" onclick="openLightbox(this)" />
+        <img src="assets/gallery/stories/story esporte.png" alt="Story 3" onclick="openLightbox(this)" />
+        <img src="assets/gallery/stories/Story Filet.png" alt="Story 4" onclick="openLightbox(this)" />
+        <img src="assets/gallery/stories/STORY PUC IN ROCA.png" alt="Story 5" onclick="openLightbox(this)" />
+        <img src="assets/gallery/stories/story seletivas esportes corrigido.png" alt="Story 6" onclick="openLightbox(this)" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" style="display:none;" onclick="lightboxClickOutside(event)">
+  <button class="lb-close" onclick="closeLightbox()">✕</button>
+  <button class="lb-prev" onclick="lightboxNav(-1)">&#8592;</button>
+  <img id="lb-img" src="" alt="" />
+  <div id="lb-caption"></div>
+  <button class="lb-next" onclick="lightboxNav(1)">&#8594;</button>
+</div>
 
     <!-- ── CONTACT ── -->
     <section id="contact" class="section" aria-label="Contact">
@@ -315,6 +359,7 @@
   </div>
 
   <!-- Scripts -->
+  <script src="js/gallery.js"></script>
   <script src="js/rain.js"></script>
   <script src="js/navigation.js"></script>
   <script src="js/clock.js"></script>
