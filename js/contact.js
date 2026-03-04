@@ -1,9 +1,8 @@
 /* ═══════════════════════════════
    CONTACT FORM
    Works out-of-the-box with:
-   - Formspree (default, free)
-   - Netlify Forms (add data-netlify="true" to <form>)
-   - EmailJS (uncomment section below)
+   Formspree, Netlify Forms (add data-netlify="true" to <form>),
+   EmailJS (uncomment section below)
 ═══════════════════════════════ */
 (function () {
   'use strict';
@@ -16,7 +15,7 @@
      1. Create a free account at https://formspree.io
      2. Create a new form and copy your endpoint ID
      3. Replace YOUR_FORM_ID below                    */
-  const FORMSPREE_ID = 'YOUR_FORM_ID'; // e.g. 'xpzvgkrb'
+  const FORMSPREE_ID = 'xgolgrgg'; // e.g. 'xpzvgkrb'
 
   /* ── Option 2: Netlify Forms ──────────────────────
      Add these attributes to your <form> tag in index.html:
@@ -47,7 +46,7 @@
 
   /* ── Formspree submit ─── */
   async function submitFormspree(data) {
-    const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+    const res = await fetch(`https://formspree.io/f/${xgolgrgg}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify(data),
@@ -77,7 +76,7 @@
     try {
       if (USE_NETLIFY) {
         await submitNetlify();
-      } else if (FORMSPREE_ID !== 'YOUR_FORM_ID') {
+      } else if (FORMSPREE_ID !== 'xgolgrgg') {
         await submitFormspree(data);
       } else {
         // Demo mode — no real submit
